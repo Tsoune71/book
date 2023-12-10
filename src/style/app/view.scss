@@ -1,0 +1,79 @@
+.navbarView {
+    width: 100%;
+    position: relative;
+    display: flex;
+    user-select: none;
+    button {
+        padding: 15px 100px;
+        transition: .2s;
+        background-color: #2D2D34;
+        box-shadow: 0 0 5px black;
+        color: #ffed00;
+        margin: auto;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        &:hover {
+            background-color: #ffed00;
+            color: rgb(21, 21, 23);
+        }
+    }
+}
+
+.contentView {
+    width: 100%;
+    height: calc(100% - 120px);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    .hours {
+        padding: 40px 20px;
+        border-radius: 20px;
+        width: 95%;
+        height: 80%;
+        margin: auto;
+        overflow: hidden;
+        overflow-y: scroll;
+        user-select: none;
+        &::-webkit-scrollbar {
+            width: 30px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(210,200,255);
+            border-radius: 30px;
+            border: 10px solid rgb(220, 255, 220);
+        }
+        div {
+            display: flex;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(210,200,255);
+            border-radius: 10px;
+            padding: 15px 0;
+            margin: 10px 0;
+            h5 {
+                margin: auto;
+                font-weight: 100;
+                font-size: 16px;
+                color: rgb(21, 21, 23);
+            }
+            h2,
+            h3 {
+                margin: auto 30px;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: 100;
+                color: rgb(21, 21, 23);
+            }
+            &:hover {
+                background-color: rgb(160,150,205);
+                h2,
+                h3,
+                h5 {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

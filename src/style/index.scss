@@ -1,0 +1,14 @@
+// INIALIZATION
+@import './initialization.scss';
+
+// Pages
+@import './pages/home.scss';
+@import './pages/admin.scss';
+
+// Components
+@import './components/verification.scss';
+
+//App
+@import './app/calendar.scss';
+@import './app/booking.scss';
+@import './app/view.scss';
